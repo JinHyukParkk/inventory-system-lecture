@@ -29,8 +29,10 @@ Connection Pool 이 부족해질 수 있으므로 DataSource 를 분리하는 �
 ### Lettuce
  - setnx 명령어를 이용한 분산락 구현
  - spin lock 방식
+ - 재시도가 필요하지 않은 lock은 lettuce 활용
 
 ### Redisson
  - pub-sub 기반의 Lock 구현 
  - Redis의 부하를 줄여줌
  - Lettuce 에 비해 구현이 복잡하고, 별도의 라이브러리 사용함
+ - 재시도가 필요한 경우 redisson
