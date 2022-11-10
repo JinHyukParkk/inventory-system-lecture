@@ -32,3 +32,5 @@ Connection Pool 이 부족해질 수 있으므로 DataSource 를 분리하는 �
 
 ### Redisson
  - pub-sub 기반의 Lock 구현 
+ - Redis의 부하를 줄여줌
+ - Lettuce 에 비해 구현이 복잡하고, 별도의 라이브러리 사용함
