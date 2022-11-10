@@ -24,3 +24,11 @@ Exclusive lock 을 걸게되면 다른 트랜잭션에서는 lock이 해제되�
 주의할 점은 transaction이 종료될 때 lock이 자동으로 해제되지 않음  
 별도의 명령어로 해제를 수행해주거나 선점 시간이 끝나야 해제됨  
 Connection Pool 이 부족해질 수 있으므로 DataSource 를 분리하는 것을 추천  
+
+## Redis 해결
+### Lettuce
+ - setnx 명령어를 이용한 분산락 구현
+ - spin lock 방식
+
+### Redisson
+ - pub-sub 기반의 Lock 구현 
